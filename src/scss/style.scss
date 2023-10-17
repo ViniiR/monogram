@@ -12,6 +12,7 @@ $darker: rgb(228, 151, 126);
 }
 
 header {
+  height: 400px;
   .heading-background {
     background-image: url('src/assets/pexels-ken-tomita-389819\ \(1\).jpg');
     background-size: cover;
@@ -35,6 +36,7 @@ header {
     }
   }
   .header-container {
+    z-index: 10;
     position: fixed;
     top: 10px;
     left: 10px;
@@ -48,6 +50,7 @@ header {
     align-items: center;
     .monogram-logo {
       color: $main-color;
+      cursor: pointer;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-around;
@@ -92,7 +95,7 @@ header {
       #currency {
         color: $main-color;
         background-color: transparent;
-        font-size: .9rem;
+        font-size: .85rem;
         border: none;
         position: relative;
         font-weight: bold;
@@ -108,8 +111,19 @@ header {
 }
 
 main {
-  height: 500px;
-  //
+  padding: 25px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0efed;
+  #root {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer {
